@@ -1,0 +1,5 @@
+[run]
+include = google_takeout_hangouts/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin

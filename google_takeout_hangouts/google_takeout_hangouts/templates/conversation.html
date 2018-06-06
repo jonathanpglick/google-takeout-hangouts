@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{conversation.name}}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container container-fluid">
+        {% for message in conversation.messages %}
+            <div class="row">
+                <div class="col-md-3 text-right">
+                    <strong>{{message.sender_name}}:</strong>
+                </div>
+                <div class="col">
+                    {{message.text|safe}} <small class="text-muted">{{message.date}}</small>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
