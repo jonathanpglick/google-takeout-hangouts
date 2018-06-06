@@ -4,6 +4,8 @@
 
 Put the contents of your `takeouts.zip` `Takeout` folder in `./Takeout`.
 
+`cd google_takeout_hangouts`
+
 `manage.py runserver`
 
 Visit `localhost:8000`
